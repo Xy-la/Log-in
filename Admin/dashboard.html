@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="table-container">
+        <div class="header">
+            <h1>Dashboard</h1>
+            <button class="logout-btn">Logout</button>
+        </div>
+        <p class="subtitle">Welcome back, Admin!</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Resident Name</th>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alucard</td>
+                    <td>25</td>
+                    <td>Purok Uno</td>
+                    <td>
+                        <button class="update-btn">Update</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Miya</td>
+                    <td>23</td>
+                    <td>Purok Dos</td>
+                    <td>
+                        <button class="update-btn">Update</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Layla</td>
+                    <td>21</td>
+                    <td>Purok Tres</td>
+                    <td>
+                        <button class="update-btn">Update</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chou</td>
+                    <td>30</td>
+                    <td>Purok Kwatro</td>
+                    <td>
+                        <button class="update-btn">Update</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Angela</td>
+                    <td>19</td>
+                    <td>Purok Singko</td>
+                    <td>
+                        <button class="update-btn">Update</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        .table-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 30px auto;
+            max-width: 950px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .logout-btn {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #d35400;
+        }
+
+        p.subtitle {
+            text-align: center;
+            font-size: 16px;
+            margin: 20px 0;
+            color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        thead {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .update-btn, .delete-btn {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .update-btn {
+            background-color: #3498db;
+        }
+
+        .update-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .delete-btn {
+            background-color: #e74c3c;
+        }
+
+        .delete-btn:hover {
+            background-color: #c0392b;
+        }
+
+        @media (max-width: 768px) {
+            .table-container {
+                padding: 20px;
+                max-width: 90%;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .logout-btn {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</body>
+</html>
